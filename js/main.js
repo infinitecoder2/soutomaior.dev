@@ -191,6 +191,9 @@ function openFolder(folderName, parentFolder = null) {
                     </div>
                 </div>
             `;
+            if (document.activeElement) {
+            document.activeElement.blur();
+        }
         }
     }
     function activateRickRoll() {
