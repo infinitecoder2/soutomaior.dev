@@ -119,6 +119,7 @@ body.flipped {
     gap: 0.5rem;
     color: #4a5568;
     font-size: 0.95rem;
+    text-decoration: none;
 }
 
 .contact-item svg {
@@ -135,6 +136,8 @@ body.flipped {
 .contact-item a {
     word-wrap: break-word;
     overflow-wrap: break-word;
+    color: inherit;
+    text-decoration: none;
 }
 
 /* Navigation Breadcrumb */
@@ -206,7 +209,7 @@ body.flipped {
 }
 
 .folder:hover {
-    background: #edf2f7;
+    background: #1a73e8;
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
 }
@@ -372,20 +375,17 @@ body.inverted {
 
 /* ========== MOBILE STYLES ========== */
 @media screen and (max-width: 768px) {
-    /* Force everything to stay within viewport */
     body {
         overflow-x: hidden;
         width: 100vw;
     }
 
-    /* Container padding */
     .container {
         padding: 1rem;
         max-width: 100%;
         overflow-x: hidden;
     }
 
-    /* Header Section - Stack vertically on mobile */
     .header {
         flex-direction: column;
         padding: 1rem;
@@ -426,11 +426,10 @@ body.inverted {
         margin-bottom: 0.5rem;
     }
 
-    /* Contact info - stack vertically with abbreviated labels */
     .contact-info {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
-        align-items: stretch;
         width: 100%;
         max-width: 100%;
         padding: 0;
@@ -438,54 +437,39 @@ body.inverted {
 
     .contact-item {
         font-size: 0.7rem;
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-        padding: 0.25rem;
         display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.5rem;
+        background: #f7fafc;
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.2s ease;
+    }
+
+    .contact-item:hover {
+        background: #e2e8f0;
     }
 
     .contact-item svg {
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
         flex-shrink: 0;
     }
 
-    /* Hide full text, show only icons and short labels on mobile */
     .contact-item span,
-    .contact-item .contact-text {
-        display: none;
+    .contact-item .contact-text,
+    .contact-item a {
+        display: inline;
+        font-size: 0.7rem;
+        text-align: center;
+        word-break: break-word;
     }
 
-    /* Show abbreviated versions for mobile */
-    .contact-item:nth-child(1)::after {
-        content: "Email";
-        font-size: 0.75rem;
-        color: #4a5568;
-    }
-
-    .contact-item:nth-child(2)::after {
-        content: "LinkedIn";
-        font-size: 0.75rem;
-        color: #4a5568;
-    }
-
-    .contact-item:nth-child(3)::after {
-        content: "GitHub";
-        font-size: 0.75rem;
-        color: #4a5568;
-    }
-
-    .contact-item:nth-child(4)::after {
-        content: "San Diego, CA";
-        font-size: 0.75rem;
-        color: #4a5568;
-    }
-
-    /* Breadcrumb */
     .breadcrumb {
         padding: 0.75rem 1rem;
         font-size: 0.85rem;
@@ -494,7 +478,6 @@ body.inverted {
         white-space: nowrap;
     }
 
-    /* Content Area */
     .content-area {
         padding: 1rem;
         max-width: 100%;
@@ -502,7 +485,6 @@ body.inverted {
         box-sizing: border-box;
     }
 
-    /* Folders Grid - 2 columns on mobile */
     .folders-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -521,7 +503,6 @@ body.inverted {
         font-size: 0.85rem;
     }
 
-    /* Folder Content */
     .folder-content {
         max-width: 100%;
         overflow-x: hidden;
@@ -538,7 +519,6 @@ body.inverted {
         overflow-wrap: break-word;
     }
 
-    /* Images in content - make them responsive */
     .folder-content img {
         max-width: 100% !important;
         height: auto !important;
@@ -546,7 +526,6 @@ body.inverted {
         border-radius: 10px;
     }
 
-    /* Project Cards */
     .project-card {
         padding: 1rem;
         margin-bottom: 1rem;
@@ -566,7 +545,6 @@ body.inverted {
         overflow-wrap: break-word;
     }
 
-    /* Project Tags */
     .project-tags {
         gap: 0.3rem;
         flex-wrap: wrap;
@@ -577,13 +555,11 @@ body.inverted {
         padding: 0.2rem 0.5rem;
     }
 
-    /* Back Button */
     .back-button {
         padding: 0.6rem 1rem;
         font-size: 0.85rem;
     }
 
-    /* XP Container */
     #xp-container {
         bottom: 10px;
         left: 10px;
@@ -596,7 +572,6 @@ body.inverted {
         font-size: 11px;
     }
 
-    /* Secret Button - make it smaller */
     .secret-button {
         padding: 3px 8px;
         font-size: 7px;
@@ -632,18 +607,19 @@ body.inverted {
 
     .contact-item {
         font-size: 0.65rem;
+        padding: 0.4rem;
     }
 
     .contact-item svg {
-        width: 14px;
-        height: 14px;
+        width: 18px;
+        height: 18px;
     }
 
-    .contact-item::after {
-        font-size: 0.7rem !important;
+    .contact-item span,
+    .contact-item a {
+        font-size: 0.65rem;
     }
 
-    /* Single column folders on very small screens */
     .folders-grid {
         grid-template-columns: 1fr;
     }
@@ -652,7 +628,6 @@ body.inverted {
         font-size: 1.1rem;
     }
 
-    /* Make lists in experience section more readable */
     .project-card ul {
         padding-left: 1rem;
     }

@@ -80,7 +80,7 @@ and team communication  </li>
             </div>
             <div class="project-card">
                 <h3>🐙 GitHub</h3>
-                <p>github.com/InfinityLabs-dev</p>
+                <p>github.com/infinitecoder2</p>
             </div>
             <div class="project-card">
                 <h3>🐦 Twitter</h3>
@@ -154,37 +154,37 @@ function openFolder(folderName, parentFolder = null) {
             contentArea.innerHTML = `
                 <div class="folders-grid" id="folders-view">
                     <div class="folder" onclick="openFolder('about')">
-                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2">
+                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="2">
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                         </svg>
                         <div class="folder-name">Resume</div>
                     </div>
                     <div class="folder" onclick="openFolder('projects')">
-                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#ffd700" stroke-width="2">
+                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#f9ab00" stroke-width="2">
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                         </svg>
                         <div class="folder-name">Projects</div>
                     </div>
                     <div class="folder" onclick="openFolder('skills')">
-                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2">
+                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#1967d2" stroke-width="2">
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                         </svg>
                         <div class="folder-name">Skills</div>
                     </div>
                     <div class="folder" onclick="openFolder('experience')">
-                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#4facfe" stroke-width="2">
+                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#12b5cb" stroke-width="2">
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                         </svg>
                         <div class="folder-name">Experience</div>
                     </div>
                     <div class="folder" onclick="openFolder('github')">
-                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2">
+                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#9aa0a6" stroke-width="2">
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                         </svg>
                         <div class="folder-name">GitHub</div>
                     </div>
                     <div class="folder" onclick="openFolder('contact')">
-                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#43e97b" stroke-width="2">
+                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="2">
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                         </svg>
                         <div class="folder-name">Contact</div>
@@ -205,7 +205,7 @@ function openFolder(folderName, parentFolder = null) {
 
 /* LOAD ALL PUBLIC GITHUB REPOS */
     async function loadGitHubRepos() {
-    const username = 'InfinityLabs-dev';
+    const username = 'infinitecoder2';
     const container = document.getElementById('github-repos-container');
     
     try {
