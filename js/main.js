@@ -1,4 +1,8 @@
     const folderContents = {
+
+
+
+        certificates: '   ',
         
         github: `
             <h2>GitHub Repositories</h2>
@@ -21,21 +25,54 @@
         skills: `
             <h2>Technical Skills</h2>
             <div class="project-card">
-                <h3>Account Management</h3>
-                <p>Solidity, Web3.js, Ethers.js, Smart Contract Development, DApp Development, IPFS</p>
+                <h3>Software & Application Development</h3>
+                <ul>
+                    <li>
+                        <p><b>Languages & Frameworks:</b> JavaScript, React.js, Node.js, HTML5, CSS3, Python, Lua</p>
+                    </li>
+                    <li>
+                        <p><b>Web3 & Blockchain:</b> Smart contract interaction via Web3.js, wallet integration, decentralized app (dApp) development</p>
+                    </li>
+                    <li>
+                        <p><b>AI Tools & Automation:</b> Prompt engineering, chatbot development (OpenAI API), process automation scripts</p>
+                    </li>
+                </ul>            
             </div>
+
             <div class="project-card">
-                <h3>Application Development</h3>
-                <p>TensorFlow, PyTorch, OpenAI API, Natural Language Processing, Computer Vision, Model Training</p>
+                <h3>Account & Project Management</h3>
+                <ul>
+                    <li>
+                        <p>Manage enterprise and B2B client portfolios</p>
+                    </li>
+                    <li>
+                        <p> Lead multi-state operations and cross-functional teams</p>
+                    </li>
+                    <li>
+                        <p> Develop and implement SOPs, CRM systems, and workflow automation to improve sales and operational efficiency</p>
+                    </li>
+                    <li>
+                        <p>Strong background in client success, retention, and data-driven strategy execution</p>
+                    </li>
+
+                </ul>            
             </div>
+
             <div class="project-card">
-                <h3>Project Management</h3>
-                <p>React, Vue.js, Next.js, TypeScript, Tailwind CSS, Three.js, WebGL</p>
+                <h3>Business Development & Strategy</h3>
+                <ul>
+                    <li>
+                        <p>Proven success in growing new territories, optimizing client acquisition, and increasing long-term revenue
+                    </li>
+                    <li>
+                        <p>Hands-on experience launching new SaaS products, digital campaigns, and marketing strategies</p>
+                    </li>
+                    <li>
+                        <p>Deep understanding of tech, digital marketing, and sales analytics within high-growth startups</p>
+                    </li>
+                </ul>            
             </div>
-            <div class="project-card">
-                <h3>Business Development</h3>
-                <p>Node.js, Python, Django, Flask, PostgreSQL, MongoDB, Redis, AWS</p>
-            </div>
+
         `,
         experience: `
             <h2>Work Experience</h2>
@@ -72,11 +109,11 @@ and team communication  </li>
             <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
             <div class="project-card">
                 <h3>📧 Email</h3>
-                <p>your.email@example.com</p>
+                <p>austin.soutomaior@gmail.com</p>
             </div>
             <div class="project-card">
                 <h3>💼 LinkedIn</h3>
-                <p>linkedin.com/in/yourprofile</p>
+                <p>linkedin.com/in/austin-soutomaior</p>
             </div>
             <div class="project-card">
                 <h3>🐙 GitHub</h3>
@@ -84,7 +121,7 @@ and team communication  </li>
             </div>
             <div class="project-card">
                 <h3>🐦 Twitter</h3>
-                <p>@yourhandle</p>
+                <p>@TheShowUp_App</p>
             </div>
         `
     };
@@ -188,6 +225,13 @@ function openFolder(folderName, parentFolder = null) {
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                         </svg>
                         <div class="folder-name">Contact</div>
+                    </div>
+
+                    <div class="folder" onclick="openFolder('certificates')">
+                        <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="2">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    <div class="folder-name">Certificates
                     </div>
                 </div>
             `;
