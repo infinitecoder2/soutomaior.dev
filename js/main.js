@@ -12,15 +12,96 @@
         `,
 
         about: `
-        <h2>Resume</h2>
+        <h2>About</h2>
             <img src="images/spiderman.jpg" 
                 style="max-width: 100%; height: auto; border: none; border-radius: 10px; display: block; margin: 0 auto;">
         <p></p>`,
         
-        projects: '',
+        projects: `
+        <h2>Projects</h2>
+        <a href="#" class="project-card" onclick="event.preventDefault(); openFolder('ShowUp', 'projects')">
+            <img src="images/showup.png" alt="AI Powered SEO Platform Logo" class="project-avatar">
+            <h3>ShowUp App</h3>
+            <p>
+                ShowUp is the first Social Accountability App. Built with Flutter, OpenAI and Firebase, ShowUp leverages AI to help users stay committed to their goals by connecting them with accountability partners and providing personalized reminders and progress tracking. 
+                Whether you're trying to build new habits, complete projects, or stay on track with your personal and professional goals, ShowUp is here to help you succeed. 
+                With its intuitive interface and powerful AI-driven features, ShowUp makes it easy to stay motivated and accountable every step of the way.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">OpenAI</span>
+            </div>
+        </a>
+        
+        
+        <a href="#" class="project-card" onclick="event.preventDefault(); openFolder('ContentClimb', 'projects')">
+            <img src="images/contentclimb.png" alt="AI Powered SEO Platform Logo" class="project-avatar">
+            <h3>Content Climb</h3>
+            <p>
+                Content Climb is an AI-powered SEO platform that analyzes your website and builds a step-by-step roadmap to boost your search performance. 
+                It scans your pages, identifies keyword opportunities, and uncovers content and competitor gaps automatically. 
+                With actionable insights and tailored strategies, Content Climb helps you optimize smarter, plan better, and grow faster all in one intuitive dashboard.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Git</span>
+                <span class="tag">Anthropic</span>
+                <span class="tag">Vercel</span>
+            </div>
+        </a>
+
+        <a href="https://underdogminingnft.com" target="_blank" class="project-card">
+            <img src="images/underdog.png" alt="Underdog ETH Minting Platform Logo" class="project-avatar">
+            <h3>Web3 ETH NFT Minting Website</h3>
+            <p>
+                UnderDog Mining is a community-first ETH NFT minting platform built with HTML, CSS, JavaScript and Web3.js. 
+                By minting this collection, you’re joining a DAO-style ecosystem where holders share in the mining profits and enjoy full transparency on assets and operations. 
+            </p>
+            <div class="project-tags">
+                <span class="tag">Solidity/ML</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Web3</span>
+                <span class="tag">JS</span>
+            </div>
+        </a>
+
+        <div class="project-card">
+            <img src="images/fivem.png" alt="Fivem Platform Logo" class="project-avatar">
+            <h3>FiveM Game Script Marketplace</h3>
+            <p>Developed interactive, open-sourced, and unique gaming scripts in Lua for the FiveM Gaming Platform.</p>
+            <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Lua</span>
+                <span class="tag">React</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/wtf.jpg" alt="Web3 News Platform Logo" class="project-avatar">
+            <h3>Web3 News Website</h3>
+            <p>Created a Web3 news aggregation platform that scrapes APIs to compile blockchain-related headlines in real time.</p>
+            <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">Git</span>
+                <span class="tag">Google AdMob</span>
+            </div>
+        </div>
+                
+        
+        
+        
+        
+        
+        `,
 
         ContentClimb: '',
 
+        ShowUp: '',
 
         skills: `
             <h2>Technical Skills</h2>
@@ -125,13 +206,6 @@ and team communication  </li>
             </div>
         `
     };
-
-    // Dynamically load projects HTML content
-    fetch('content/projects.html')
-        .then(response => response.text())
-        .then(html => folderContents.projects = html)
-        .catch(err => console.error("Couldn't load projects.html:", err));
-
     let currentFolder = 'home';
 
 function openFolder(folderName, parentFolder = null) {
@@ -194,7 +268,7 @@ function openFolder(folderName, parentFolder = null) {
                         <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="2">
                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                         </svg>
-                        <div class="folder-name">Resume</div>
+                        <div class="folder-name">About</div>
                     </div>
                     <div class="folder" onclick="openFolder('projects')">
                         <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="#f9ab00" stroke-width="2">
