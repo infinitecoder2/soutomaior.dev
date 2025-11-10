@@ -23,14 +23,20 @@
         <h2>About</h2>
             
         <p>
-            Extensive experience in delivering client-focused solutions and 
+            From a young age, I have always been passionate about technology and its potential to 
+            transform the world we live in. This passion led me to continue learning about software development, 
+            and digital marketing, where I have honed my skills in various programming 
+            languages, frameworks, and tools. Currently, I am focused on building innovative tools that utilize AI to help companies
+            automate processes, improve efficiency, and drive growth.
+            
+            Beyond technical skills, I have extensive experience in Account Management
+            and Business Development, allowing me to bridge the gap between technical solutions and client needs. 
+            I have a proven track record in delivering client-focused solutions and 
             successfully managing multiple projects and clients while achieving 
-            overall objectives. I have a strong passion for continuing to learn and 
-            develop new tools. Excellent critical thinking, time management, 
-            problem-solving and communication skills.
-        
-        
-        </p>`,
+            overall objectives.
+            
+        </p>
+    `,
         
         projects: `
         <h2>Projects</h2>
@@ -234,7 +240,6 @@ and team communication  </li>
         `,
         contact: `
             <h2>Get In Touch</h2>
-            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
             <div class="project-card">
                 <h3>📧 Email</h3>
                 <p>austin.soutomaior@gmail.com</p>
