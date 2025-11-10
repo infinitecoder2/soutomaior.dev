@@ -5,7 +5,8 @@
         certificates: `
             <h2>Certificates</h2>
             <div class="project-card">
-                <h3><b>Coming Soon</b></h3>            
+                <h3><b>Coming Soon</b></h3>
+            
             </div>
             `,
             
@@ -357,7 +358,12 @@ function openFolder(folderName, parentFolder = null) {
             `;
             if (document.activeElement) {
             document.activeElement.blur();
-        }
+            }
+
+            document.querySelectorAll('.folder').forEach(folder => {
+            folder.blur();
+        });
+
         }
     }
     function activateRickRoll() {
