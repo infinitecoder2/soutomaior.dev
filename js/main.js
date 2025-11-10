@@ -366,6 +366,35 @@ function openFolder(folderName, parentFolder = null) {
 
         }
     }
+
+    // Swipe to go back functionality
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function handleSwipe() {
+        const swipeThreshold = 100; // Minimum swipe distance in pixels
+        const swipeDistance = touchEndX - touchStartX;
+        
+        // Swipe right to go back
+        if (swipeDistance > swipeThreshold && currentFolder !== 'home') {
+            const backButton = document.querySelector('.back-button');
+            if (backButton) {
+                backButton.click();
+            }
+        }
+    }
+
+    document.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    document.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+
+
+
     function activateRickRoll() {
         document.body.classList.toggle('flipped');
 
