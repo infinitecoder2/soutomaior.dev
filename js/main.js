@@ -2,8 +2,15 @@
 
 
 
-        certificates: '   ',
-        
+        certificates: `
+            <h2>Certificates</h2>
+            <div class="project-card">
+                <h3><b>Coming Soon</b></h3>            
+            </div>
+            `,
+            
+
+
         github: `
             <h2>GitHub Repositories</h2>
             <div id="github-repos-container">
@@ -13,9 +20,16 @@
 
         about: `
         <h2>About</h2>
-            <img src="images/spiderman.jpg" 
-                style="max-width: 100%; height: auto; border: none; border-radius: 10px; display: block; margin: 0 auto;">
-        <p></p>`,
+            
+        <p>
+            Extensive experience in delivering client-focused solutions and 
+            successfully managing multiple projects and clients while achieving 
+            overall objectives. I have a strong passion for continuing to learn and 
+            develop new tools. Excellent critical thinking, time management, 
+            problem-solving and communication skills.
+        
+        
+        </p>`,
         
         projects: `
         <h2>Projects</h2>
@@ -106,7 +120,7 @@
         skills: `
             <h2>Technical Skills</h2>
             <div class="project-card">
-                <h3>Software & Application Development</h3>
+                <h3><u>Software & Application Development</u></h3>
                 <ul>
                     <li>
                         <p><b>Languages & Frameworks:</b> JavaScript, React.js, Node.js, HTML5, CSS3, Python, Lua</p>
@@ -120,8 +134,24 @@
                 </ul>            
             </div>
 
+
             <div class="project-card">
-                <h3>Account & Project Management</h3>
+                <h3><u>Digital Marketing & Data Tools</u></h3>
+                <ul>
+                   <li><p><b>CRO & Funnel Optimization:</b> Execute A/B and multivariate tests across different platforms to improve CTR, CVR, and CAC efficiency.</p></li>
+                   <li><p><b>Landing Page Development:</b> Built and optimized responsive websites with integrated analytics and tracking.</p></li>
+                   <li><p><b>Campaign Management:</b> Designed, launched, and iterated multi-channel campaigns across email, paid ads, and in-app flows.</p></li>
+                   <li><p><b>Automation & Integrations:</b> Implemented full-funnel analytics through Google Analytics, Tag Manager, HubSpot, and custom API integrations, ensuring clean attribution and actionable reporting.</p></li>
+                   <li><p>Experienced in developing test hypotheses, designing data-driven experiments, and maintaining continuous optimization loops for funnel performance.</p></li>
+
+                </ul>            
+            </div>
+
+
+
+
+            <div class="project-card">
+                <h3><u>Account & Project Management</u></h3>
                 <ul>
                     <li>
                         <p>Manage enterprise and B2B client portfolios</p>
@@ -140,7 +170,7 @@
             </div>
 
             <div class="project-card">
-                <h3>Business Development & Strategy</h3>
+                <h3><u>Business Development & Strategy</u></h3>
                 <ul>
                     <li>
                         <p>Proven success in growing new territories, optimizing client acquisition, and increasing long-term revenue
@@ -176,13 +206,29 @@ and team communication  </li>
             <div class="project-card">
                 <h3>Senior Account Manager</h3>
                 <p><strong>Safe-Reach Digital Marketing </strong> |  09/2021 - 02/2024</p>
-                <p>Developed full-stack web applications using React and Node.js. Implemented CI/CD pipelines and improved application performance by 40%.</p>
+                <p>
+                <ul>
+                    <li>Boosted client satisfaction by effectively managing and resolving account issues.</li>
+                    <li>Provide data driven reports from all active campaigns to aid with decision making.</li>
+                    <li>Performed effectively in self-directed work environment, managing day-to-day operations and decisions.</li>
+                    <li>Streamlined account management processes, improving overall efficiency and productivity.</li>
+                </ul>
+                </p>
             </div>
 
             <div class="project-card">
                 <h3>Owner</h3>
                 <p><strong>Market Consulting Solutions</strong> | 01/2020 - 02/2022 </p>
-                <p>Built responsive web interfaces and RESTful APIs. Collaborated with cross-functional teams to deliver high-quality products.</p>
+                <p>
+                <ul>
+                    <li>Increased brand awareness by developing and implementing comprehensive digital marketing strategies for clients across new and regulated industries.</li>
+                    <li>Boosted sales through targeted advertising campaigns across Google Ads, Meta Ads, and other digital platforms, driving measurable ROI.</li>
+                    <li>Designed and optimized landing pages and websites to improve conversion rates and user experience.</li>
+                    <li>Created and managed multi-channel content strategies, including social media, email marketing, and promotional campaigns to strengthen online engagement.</li>
+                    <li>Developed comprehensive marketing plans for both local and nationwide businesses to expand their digital footprints and enhance brand visibility.</li>
+                </ul>
+                </p>
+
             </div>
         `,
         contact: `
