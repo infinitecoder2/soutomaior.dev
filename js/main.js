@@ -28,7 +28,9 @@
             and digital marketing, where I have honed my skills in various programming 
             languages, frameworks, and tools. Currently, I am focused on building innovative tools that utilize AI to help companies
             automate processes, improve efficiency, and drive growth.
-            
+        </p>
+           
+        <p>
             Beyond technical skills, I have extensive experience in Account Management
             and Business Development, allowing me to bridge the gap between technical solutions and client needs. 
             I have a proven track record in delivering client-focused solutions and 
