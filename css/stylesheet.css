@@ -579,8 +579,8 @@ body.inverted {
     }
 }
 
-/* Very small screens (phones in portrait) */
-@media screen and (max-width: 480px) {
+/* Very small screens (phones in portrait) - only for screens narrower than iPhone 11 */
+@media screen and (max-width: 375px) {
     .container {
         padding: 0.5rem;
     }
