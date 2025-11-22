@@ -93,7 +93,7 @@ and team communication  </li>
     fetch('content/projects.html')
         .then(response => response.text())
         .then(html => folderContents.projects = html)
-        .catch(err => console.error("Couldn't load projects.html:", err));
+        .catch(err => console.error("Couldn't load projects html file:", err));
 
     let currentFolder = 'home';
 
