@@ -209,7 +209,6 @@ body.flipped {
 }
 
 .folder:hover {
-    background: #1a73e8;
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
 }
@@ -580,8 +579,8 @@ body.inverted {
     }
 }
 
-/* Very small screens (phones in portrait) */
-@media screen and (max-width: 480px) {
+/* Very small screens (phones in portrait) - only for screens narrower than iPhone 11 */
+@media screen and (max-width: 375px) {
     .container {
         padding: 0.5rem;
     }
