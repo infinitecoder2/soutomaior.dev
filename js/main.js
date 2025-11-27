@@ -317,12 +317,6 @@ and team communication  </li>
         `
     };
 
-    // Dynamically load projects HTML content
-    fetch('content/projects.html')
-        .then(response => response.text())
-        .then(html => folderContents.projects = html)
-        .catch(err => console.error("Couldn't load projects.html:", err));
-
     let currentFolder = 'home';
 
 function openFolder(folderName, parentFolder = null) {
