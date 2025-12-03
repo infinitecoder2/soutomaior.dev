@@ -227,7 +227,7 @@ and team communication  </li>
 
             <div class="project-card">
                 <h3>Owner</h3>
-                <p><strong>Market Consulting Solutions</strong> | 01/2020 - 02/2022 </p>
+                <p><strong>Market Consulting Solutions</strong> | 09/2019 - 02/2022 </p>
                 <p>
                 <ul>
                     <li>Increased brand awareness by developing and implementing comprehensive digital marketing strategies for clients across new and regulated industries.</li>
