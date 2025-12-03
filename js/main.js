@@ -1,4 +1,4 @@
-    const folderContents = {
+const folderContents = {
 
 
 
@@ -122,9 +122,65 @@
         
         `,
 
-        ContentClimb: '',
+        ContentClimb: `
+            <h2>Content Climb</h2>
+            <div class="project-card">
+                <img src="images/contentclimb.png" alt="Content Climb Logo" class="project-avatar">
+                <h3>About Content Climb</h3>
+                <p>
+                    Content Climb is an AI-powered SEO platform that analyzes your website and builds a step-by-step roadmap to boost your search performance. 
+                    It scans your pages, identifies keyword opportunities, and uncovers content and competitor gaps automatically.
+                </p>
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Automated website analysis and SEO auditing</li>
+                    <li>Keyword opportunity identification</li>
+                    <li>Content gap analysis</li>
+                    <li>Competitor research and insights</li>
+                    <li>Actionable SEO roadmap generation</li>
+                    <li>Intuitive dashboard for tracking progress</li>
+                </ul>
+                <h3>Technology Stack</h3>
+                <div class="project-tags">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Anthropic</span>
+                    <span class="tag">Vercel</span>
+                </div>
+            </div>
+        `,
 
-        ShowUp: '',
+        ShowUp: `
+            <h2>ShowUp App</h2>
+            <div class="project-card">
+                <img src="images/showup.png" alt="ShowUp App Logo" class="project-avatar">
+                <h3>About ShowUp</h3>
+                <p>
+                    ShowUp is the first Social Accountability App designed to help users stay committed to their goals through community support and AI-powered features.
+                </p>
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Connect with accountability partners</li>
+                    <li>AI-powered personalized reminders</li>
+                    <li>Progress tracking and analytics</li>
+                    <li>Goal setting and milestone management</li>
+                    <li>Social features for community support</li>
+                    <li>Intuitive and user-friendly interface</li>
+                </ul>
+                <h3>Technology Stack</h3>
+                <div class="project-tags">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">OpenAI</span>
+                </div>
+                <h3>Use Cases</h3>
+                <p>
+                    Whether you're building new habits, completing projects, or staying on track with personal and professional goals, 
+                    ShowUp provides the motivation and accountability you need to succeed.
+                </p>
+            </div>
+        `,
 
         skills: `
             <h2>Technical Skills</h2>
@@ -260,6 +316,7 @@ and team communication  </li>
             </div>
         `
     };
+
     let currentFolder = 'home';
 
 function openFolder(folderName, parentFolder = null) {
@@ -449,4 +506,3 @@ function openFolder(folderName, parentFolder = null) {
         container.innerHTML = '<p>Error loading repositories. Please try again later.</p>';
     }
 }
-
