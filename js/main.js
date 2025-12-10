@@ -42,6 +42,25 @@ const folderContents = {
         
         projects: `
         <h2>Projects</h2>
+        
+        <a href="https://reluxeviews.com" target="_blank" class="project-card">
+            <img src="images/reluxe.png" alt="Reluxe Drone Views Logo" class="project-avatar">
+            <h3>Reluxe Drone Views</h3>
+            <p>
+                Reluxe Drone Views is a FPV and Aerial drone photography and videography company that captures stunning aerial shots for real estate, events, and marketing campaigns. 
+                Utilizing the latest drone technology and skilled pilots, Reluxe provides high-quality visuals that elevate your projects and presentations.
+                Whether you're looking to showcase a property, document an event, or create captivating marketing content, Reluxe Drone Views delivers professional and creative solutions tailored to your needs.
+            </p>
+            <div class="project-tags">
+                <span class="tag">FPV Drones</span>
+                <span class="tag">Aerial Drones</span>
+                <span class="tag">Video Editing</span>
+            </div>
+        </a>
+
+
+
+
         <a href="#" class="project-card" onclick="event.preventDefault(); openFolder('ShowUp', 'projects')">
             <img src="images/showup.png" alt="AI Powered SEO Platform Logo" class="project-avatar">
             <h3>ShowUp App</h3>
