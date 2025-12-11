@@ -44,7 +44,7 @@ const folderContents = {
         <h2>Projects</h2>
         
         <a href="https://reluxeviews.com" target="_blank" class="project-card">
-            <img src="images/reluxe.png" alt="Reluxe Drone Views Logo" class="project-avatar">
+            <img src="images/reluxe.PNG" alt="Reluxe Drone Views Logo" class="project-avatar">
             <h3>Reluxe Drone Views</h3>
             <p>
                 Reluxe Drone Views is a FPV and Aerial drone photography and videography company that captures stunning aerial shots for real estate, events, and marketing campaigns. 
